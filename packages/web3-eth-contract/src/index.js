@@ -300,8 +300,8 @@ Contract.prototype._decodeEventABI = function (data) {
 
     // if allEvents get the right event
     if(event.name === 'ALLEVENTS') {
-        event = event.jsonInterface.find(function (interface) {
-            return (interface.signature === data.topics[0]);
+        event = event.jsonInterface.find(function (jsonInterface) {
+            return (jsonInterface.signature === data.topics[0]);
         }) || {anonymous: true};
     }
 

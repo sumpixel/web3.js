@@ -24,6 +24,7 @@
 
 
 var errors = require('web3-core-helpers').errors;
+var XMLHttpRequest;
 
 
 // workaround to use httpprovider in different envs

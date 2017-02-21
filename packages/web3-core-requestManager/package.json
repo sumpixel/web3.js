@@ -9,7 +9,8 @@
         "web3-core-helpers": "^1.0.0",
         "underscore": "^1.8.3",
         "xmlhttprequest": "*",
-        "xhr2": "*"
+        "xhr2": "*",
+        "websocket": "^1.0.24"
     },
     "browser": {
         "xmlhttprequest": "./src/browser-xhr.js"

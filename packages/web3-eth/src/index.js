@@ -337,8 +337,8 @@ var methods = function () {
                 outputFormatter: formatters.outputBlockFormatter
             },
             'pendingTransactions': {
+                subscriptionName: 'newPendingTransactions',
                 params: 0,
-                outputFormatter: formatters.outputTransactionFormatter
             },
             'logs': {
                 params: 1,
