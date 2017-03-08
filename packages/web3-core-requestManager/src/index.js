@@ -190,10 +190,11 @@ RequestManager.prototype.removeSubscription = function (id, callback) {
 
     if(this.subscriptions[id]) {
 
-        this.send({
-            method: this.subscriptions[id].type + '_unsubscribe',
-            params: [id]
-        }, callback);
+        // FIXME comment out because it throws error if connection is closed
+        // this.send({
+        //     method: this.subscriptions[id].type + '_unsubscribe',
+        //     params: [id]
+        // }, callback);
 
         // remove subscription
         delete _this.subscriptions[id];

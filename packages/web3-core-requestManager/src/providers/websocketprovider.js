@@ -83,12 +83,10 @@ WebsocketProvider.prototype.addDefaultEvents = function(){
     var _this = this;
 
     this.connection.onerror = function(e){
-        console.log('Connection error');
         _this._timeout();
     };
 
     this.connection.onclose = function(e){
-        console.log('Connection close');
         _this._timeout();
 
         var noteCb = _this.notificationCallbacks;
